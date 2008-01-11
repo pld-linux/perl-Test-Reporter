@@ -62,5 +62,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_vendorlib}/Test/*.pm
 #%%{perl_vendorlib}/Test/Reporter
 %{_mandir}/man3/*
-%{_bindir}/cpantest
+%attr(755,root,root) %{_bindir}/cpantest
 %{_mandir}/man1/*
