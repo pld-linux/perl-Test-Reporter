@@ -8,13 +8,13 @@
 Summary:	Test::Reporter - sends test results to cpan-testers@perl.org
 Summary(pl.UTF-8):	Test::Reporter - wysyłanie wyników testów na adres cpan-testers@perl.org
 Name:		perl-Test-Reporter
-Version:	1.38
+Version:	1.5203
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a61f05b45b37074c14db8bfdecfb9659
+# Source0-md5:	724d901e4cb86705c364be855d3b205b
 URL:		http://search.cpan.org/dist/Test-Reporter/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -54,6 +54,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes INSTALL README
 %{perl_vendorlib}/Test/*.pm
+%{perl_vendorlib}/Test/Reporter
 %{_mandir}/man3/*
 %attr(755,root,root) %{_bindir}/cpantest
 %{_mandir}/man1/*
